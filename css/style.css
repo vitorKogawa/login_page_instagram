@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
+    outline: none;
 }
 
 
@@ -15,7 +16,9 @@ body{
     margin: 0px;
     padding: 0px;
     display: flex; /* seta o displa do container como flex que por padrão posiciona os elementos internos em linha (row) , fazendo com que cada componentes ocupe o espaço necessário. */
+    flex-direction: column;
     justify-content: center; /* alinhamento  horizontal dos componentes */
+    align-items: center;
 }
 
 .instagram-wrapper{
@@ -95,10 +98,21 @@ body{
 
 .not-account{
     color: rgb(160,160,160);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem 0;
 }
 
 .link-blue{
     color: #0095f6;
+    cursor: pointer;
+    margin: 0.3rem  1rem;
+}
+
+.link-blue:hover{
+    text-decoration: underline;
 }
 
 .get-the-app{
@@ -135,6 +149,60 @@ body{
 .app-download:nth-child(2){
     background-image: url("./../img/googleplay-button.png");
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 5rem;
+}
+
+footer > .footer-wrapper{
+    width: 60%;
+}
+
+footer > .footer-wrapper > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .footer-wrapper > nav > ul > li{
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+footer > .footer-wrapper > nav > ul > li > a{
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+footer > .footer-wrapper > .footer-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.5rem 0;
+}
+
+footer > .footer-wrapper > .footer-footer select{
+    border: 0px;
+    border-radius: 10px;
+    outline: 0px;
+}
+
+footer > .footer-wrapper > .footer-footer select,
+footer > .footer-wrapper > .footer-footer p.copyright
+{
+    margin: 0.5rem;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
 
 @media (max-width: 1024px){
     .instagram-wrapper{
