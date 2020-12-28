@@ -37,4 +37,46 @@ body{
     height: 50rem;
 }
 
-.instagram-continue
+.instagram-continue{
+    display: flex;
+    flex-direction: column; /* alterando eixo do display flex para coluna (um item vai ficar debaixo do outro) */
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem; 
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/* nth-child pega os filhos do componentes, como parâmetro é passado qual filho vc quer manipular , no caso abaixo estou pegando o primeiro filho */
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* para a imagem não vazar para fora dos limites da div, a parte vazada fica escondida (hidden) */ 
+    height: 8rem;
+}
+
+.profile-photo img{
+    height: 12rem;
+}
+
+
