@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0px;
+    padding: 0px;
+    display: flex; /* seta o displa do container como flex que por padrão posiciona os elementos internos em linha (row) , fazendo com que cada componentes ocupe o espaço necessário. */
+    justify-content: center; /* alinhamento  horizontal dos componentes */
+}
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center; /* alinhamento vertical dos componentes */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue
