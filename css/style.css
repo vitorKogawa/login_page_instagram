@@ -76,7 +76,8 @@ body{
     align-items: center;
     border-radius: 50%;
     overflow: hidden; /* para a imagem não vazar para fora dos limites da div, a parte vazada fica escondida (hidden) */ 
-    height: 8rem;
+    height: 8.5rem;
+    width: 8.5rem;
     margin: 1.3rem 0;
 }
 
