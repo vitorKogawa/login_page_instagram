@@ -54,6 +54,7 @@ body{
     background-color: #fff;
     width: 100%;
     padding: 1.3rem 0;
+    margin: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
@@ -73,10 +74,94 @@ body{
     border-radius: 50%;
     overflow: hidden; /* para a imagem não vazar para fora dos limites da div, a parte vazada fica escondida (hidden) */ 
     height: 8rem;
+    margin: 1.3rem 0;
 }
 
 .profile-photo img{
     height: 12rem;
+}
+
+.instagram-login {
+    color: #0095f6;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+    font-weight: bold;
+}
+
+.download{
+    display: flex;
+    justify-content: space-evenly; /* mesmo espaçamento nos lados e no meio do componentes */
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url("./../img/apple-button.png");
+}
+
+.app-download:nth-child(2){
+    background-image: url("./../img/googleplay-button.png");
+}
+
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #fff;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
 }
 
 
